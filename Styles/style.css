@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
+:root{
+    --primary-color: blue;
+    --secundary-color: tomato;
+    
+    --font-family: 'Manrope', sans-serif;
+}
+
+/* Declarado generales para alternarlos a mobile*/
+body{
+    font-family: var(--font-family);
+}
+
+
+.container-cabecera{
+    width: calc(100% - 2rem);
+    max-width: 1200px;   /*Cambiar a variable*/
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* MENU */
+
+
+.main-header{
+    display: flex;
+    width: 100%;
+    background-color: red;
+}
+
+/* al contendor que sigue del header */
+.main-header .container-cabecera{
+    display: flex;
+    align-items: center;
+}
+
