@@ -1,45 +1,239 @@
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding   : 0;
+    margin    : 0;
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 
 :root{
-    --primary-color: blue;
-    --secundary-color: tomato;
+    --primary-color     : #0B4690;
+    --primary-color-alt : #072E5F;
+    --secundary-color   : #98C8C5;
+    --secunday-color-alt: #59A6A1;
+    --color-body        : #18191F;
     
     --font-family: 'Manrope', sans-serif;
+
+    /* Tamaños */
+    --header-height: 4rem;
+
+    /* Tamaño de fuentes */
+    --h1-font-size     : 4.5rem;
+    --h2-font-size     : 3rem;
+    --h3-font-size     : 1.5rem;
+    --h4-font-size     : 1rem;
+    --normal-font-size : 1.125rem;
+    --small-font-size  : 1rem;
+    --smaller-font-size: 0.6875rem;
+    --menu-font-size   : 0.875rem;
+
+    /* Pruebas */
+    --borde-marca: rgba(192, 204, 218, 0.6);
+    
 }
 
 /* Declarado generales para alternarlos a mobile*/
 body{
-    font-family: var(--font-family);
+    font-family   : var(--font-family);
+    display       : flex;
+    flex-direction: column;
+    color         : var(--color-body);
+    font-size     : var(--normal-font-size);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top : 0;
+  font-weight: 800;
 }
 
 
-.container-cabecera{
-    width: calc(100% - 2rem);
-    max-width: 1200px;   /*Cambiar a variable*/
-    margin-left: 1rem;
-    margin-right: 1rem;
+h1 {
+    font-size    : var(--h1-font-size);
+    line-height  : 98px;
+    margin-bottom: 1rem;
 }
 
+h2 {
+font-size: var(--h2-font-size);
+}
+
+h3 {
+font-size: var(--h3-font-size);
+}
+
+h4 {
+font-size: var(--h4-font-size);
+} 
+
+p {
+    line-height: 32px;
+}
+
+.container{
+    width       : calc(100% - 2rem);
+    max-width   : 1200px;             /*Cambiar a variable*/
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.col-2 {
+    max-width: 50%;
+}
+
+.p-100 {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+/* ------------------------------------------- */
 /* MENU */
 
 
-.main-header{
+.cabecera{
     display: flex;
-    width: 100%;
-    background-color: red;
+    width  : 100%;
+    height : var(--header-height);
+    /* background-color: red;                 */
 }
 
 /* al contendor que sigue del header */
-.main-header .container-cabecera{
+.container-fondo{
+    background-image   : url(/Images/Fondo-circulos2.svg);
+    background-repeat  : no-repeat;
+    background-position: right 0;
+}
+
+.cabecera-container{
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+
+.cabecera-container-menu ul{
+    list-style  : none;
+    padding-left: 0;
+    margin      : 0;
+}
+
+.cabecera-container-menu a {
+    display        : block;
+    padding        : 0.75rem 1rem;
+    font-size      : var(--menu-font-size);
+    color          : var(--color-body);
+    text-decoration: none;
+    font-weight    : 700;
+}
+
+.cabecera-container-menu ul, .cabecera-container-iconos{
+    display: flex;
+}
+
+.cabecera-icon-redes {
+    padding: 0.75rem 1rem;
+}
+
+/* ------- Conteiner Hero -----------  */
+
+.container-hero{
+    display    : flex;
+    align-items: center;
+    padding    : 140px 0;
+   
+}
+
+.hero-text-p {
+    padding-bottom: 2rem;
+}
+
+
+
+.hero-img-img {
+    width    : 100%;
+    animation: Latidos ease-in 1s infinite alternate;
+}
+
+@keyframes Latidos {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.04);
+    }
+}
+
+
+/* Carrusel de marcas */
+.section-carrousel{
+
+}
+
+.carrousel-margen {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    /* height: 72px; */
+    padding: 3rem 0;
+    /* border-top: 2px solid var(--borde-marca);
+    border-bottom: 2px solid var(--borde-marca); */
+}
+
+/* Examenes Médicos Ocupacionales */
+.section-emo{  
+    padding: 4rem 0;
+    background-image: url(/Images/Iconos/circulo-completo.svg);
+    background-repeat: no-repeat;
+    background-position: 4% 80%;
+}
+
+.emo-text{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.emo-text-titulo{
+    padding-bottom: 1rem;
+}
+
+.emo-text-subtitle {
+    width : 80%;
+    margin: auto;
+}
+
+.emo-categorias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.emo-categorias-icon{
+    width: 10%;
+}
+
+.emo-categoria-p{
+    font-size: 1rem;
+    padding: .5rem 0;
+    width: 80%;
+    margin: auto;
+    line-height: 2rem;
+}
+.categoria-card {
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+/* Vigilancia Médica  */
+
+.vigilacia-section{
+  background-color: #f2f2f2;
+}
+
+.vigilancia-container{
     display: flex;
     align-items: center;
 }
-
