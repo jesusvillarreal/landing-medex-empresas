@@ -29,36 +29,72 @@
         <div class="content">
             <div class="container-form " >
                 <label for="show" class="close-btn fas fa-times" id="close-modal" ></label>
-                <div class="text">Formulario</div>
+                
+                <!-- Formuarlio -->
+                <h4>Solicitar información</h4>
+                <p class="subtitulo-formulario">Mejora la calidad y productividad de tus trabajadores</p>
                 <form action="#">
                     <div class="data">
-                        <label for="">Empresa o Nombre</label>
-                        <input type="text" value="" required>
+                        <label class="modal-label" for="">Empresa o Nombre</label>
+                        <input 
+                        class="input-formulario" 
+                        placeholder="Ingresa nombre de la empresa"
+                        type="text" 
+                        value="" 
+                        required>
                     </div>
                     <div class="data">
-                        <label for="">RUC o DNI</label>
-                        <input type="text" value="" required>
+                        <label class="modal-label" for="">RUC o DNI</label>
+                        <input 
+                        class="input-formulario" 
+                        placeholder="Ingresa tu número de contacto"
+                        type="number" 
+                        value="" 
+                        required>
                     </div>
                     <div class="data">
-                        <label for="">Actividad de la empresa</label>
-                        <input type="text" value="" >
+                        <label class="modal-label" for="">Actividad de la empresa</label>
+                        <input 
+                        class="input-formulario" 
+                        placeholder="Ingrese rubro o actividad"
+                        type
+                        ="text" v
+                        alue="" >
                     </div>
                     <div class="data">
-                        <label for="">Persona de contacto</label>
-                        <input type="text" value="" required>
+                        <label class="modal-label" for="">Persona de contacto</label>
+                        <input 
+                        class="input-formulario" 
+                        placeholder="Ingresa su nombre"
+                        type="text" 
+                        value="" 
+                        required>
                     </div>
                     <div class="data">
-                        <label for="">Telefono o WhatsApp</label>
-                        <input type="text" value="" required>
+                        <label class="modal-label" for="">Telefono o WhatsApp</label>
+                        <input 
+                        class="input-formulario" 
+                        placeholder="Ingresa tu telefono o WhatsApp"
+                        type="text" 
+                        value="" 
+                        required>
                     </div>
                     <div class="data">
-                        <label for="">Correo</label>
-                        <input type="text" value="" required>
+                        <label class="modal-label" for="">Correo</label>
+                        <input 
+                        class="input-formulario" 
+                        placeholder="Ingresa tu correo electronico"
+                        type="text" 
+                        value="" 
+                        required>
                     </div>
-                    <button type="submit">Enviar datos</button>
+                    <!-- <div class="terms">
+                        <input type="checkbox" name="terms" onclick="disableSending()">
+                        <label for="terms">Acepto recibir información de promociones.</label>
+                    </div> -->
+                    <button type="submit" class="formulario-submit button dark" >Enviar datos</button>
                 </form>
             </div>
-            <button id="close-modal">Cerrar Modal</button>
         </div>
     </div>
 
@@ -127,19 +163,29 @@
                 <!-- OWl Carrousel -->
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <a href="#covid" class="scroll">
-                            <img src="/Images/Card.png" alt="">
+                        <a href="#emo" class="scroll">
+                            <img src="/Images/Slider/emo.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="item">
+                        <a href="#vigilancia" class="scroll">
+                            <img src="/Images/Slider/vigilanca.png" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <img src="/Images/Card.png" alt="">
+                        <a href="#covid" class="scroll">
+                            <img src="/Images/Slider/covid-19.png" alt="">
+                        </a>
                     </div>
+                   
+                   
                     <div class="item">
-                        <img src="/Images/Card.png" alt="">
+                        <a href="#servicios" class="scroll">
+                            <img src="/Images/Slider/servicios.png" alt="">
+                        </a>
                     </div>
-                    <div class="item">
-                        <img src="/Images/Card.png" alt="">
-                    </div>
+                   
                    
                 </div>
             </div>
@@ -162,10 +208,10 @@
                         <p class="emo-categoria-p">Son el conjunto de Evaluaciones médicas que se realiza al trabajador antes de ser contratado en el puesto.</p>
                         
 
-                         <!-- Prueba Acordeon  -->
+                         <!-- Acordeon  -->
                         <button class="accordion button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
                         <div class="panel">
-                            <p class="accordion-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quos nisi dolorem explicabo incidunt aliquid voluptates assumenda aliquam odio, fugiat minima sapiente obcaecati asperiores totam repudiandae cumque neque eaque ea.</p>
+                            <p class="accordion-text"><strong>Objetivo:</strong> <br> Determinar el estado de salud al momento del ingreso y la aptitud del trabajador para el mismo.</p>
                         </div>
 
                 
@@ -177,25 +223,39 @@
                         <img src="/Images/Iconos/emo/Periodico o Anual.svg" alt="" class="emo-categorias-icon">
                         <h4>Periodico o Anual</h4>
                         <p class="emo-categoria-p">Son exámenes médicos que se realizan durante la prestación de servicios.</p>
-                        <a href="#">
-                            <button class="button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
-                        </a>
+                        
+                        
+                         <!-- Acordeon  -->
+                         <button class="accordion button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
+                         <div class="panel">
+                             <p class="accordion-text"><strong>Objetivo:</strong> <br> Promover la salud en el trabajo, la prevención y la detección precoz de patologías ocupacionales.</p>
+                         </div>
                     </div>
+
                     <div class="categoria-card col-2">
                         <img src="/Images/Iconos/emo/Retiro.svg" alt="" class="emo-categorias-icon">
                         <h4>Retiro</h4>
                         <p class="emo-categoria-p">Son Evaluaciones médicas realizadas al trabajador una vez culminado su contrato laboral.</p>
-                        <a href="#">
-                            <button class="button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
-                        </a>
+                        
+                         <!-- Acordeon  -->
+                         <button class="accordion button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
+                         <div class="panel">
+                            <p class="accordion-text"><strong>Objetivo:</strong> <br> Esta evaluación debe realizarse días previos al cese laboral.
+                            <br> <br>
+                            Los exámenes médicos de salida son facultativos, y podrán realizarse, a solicitud del trabajador o empleador.  En el caso de trabajadores que realizan trabajos de alto riesgo, el empleador se encuentra obligado a realizar estos exámenes.</p>
+                         </div>
+
                     </div>
                     <div class="categoria-card col-2">
                         <img src="/Images/Iconos/emo/reubicación.svg" alt="" class="emo-categorias-icon">
                         <h4>Re-ubicación</h4>
                         <p class="emo-categoria-p">Exámen Ocupacional realizado a todo trabajador que es cambiado de funciones o de puesto de trabajo.</p>
-                        <a href="#">
-                            <button class="button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
-                        </a>
+                    
+                         <!-- Acordeon  -->
+                         <button class="accordion button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
+                         <div class="panel">
+                             <p class="accordion-text"><strong>Objetivo:</strong> <br> Determina el estado de salud al cambio de puesto de trabajo; esto para, saber si cumple con el perfil del puesto.</p>
+                         </div>
                     </div>
 
                 </div>
@@ -210,7 +270,26 @@
                     <h2>Vigilancia Médica Ocupacional</h2>
                     <p class="vigilancia-text">Actividad conducida principalmente por el médico ocupacional el cual incluye procedimientos para la recogida sistemática y análisis de datos de salud de los trabajadores, principalmente relacionados con el trabajo.</p>
                     
-                        <button class="button " >Cotizar </button>
+                    <!-- Acordeon  -->
+                    <button class="accordion button ghost">Más detalles <i class="fas fa-chevron-down"></i></button>
+                    <div class="panel">
+                        <div class="panel-interior">
+                            <p class="accordion-text"><strong>¿Cuál es la finalidad de la vigilancia médica?</strong> 
+                                <br> 
+                                Su aplicación, tanto a nivel individual como colectivo, tiene como finalidad la protección y promoción de la salud de los trabajadores
+                                <br><br>
+                                <strong>¿Cómo te ayudamos?</strong>
+                                <br>
+                                Medex te ayuda a integrar mediante nuestros servicios tus programas de vigilancia médica  ocupacional y experimentar los beneficios de ello como: 
+                                    <ul class="lista-ul">
+                                        <li>Mejorar la calidad de vida de sus trabajadores</li>
+                                        <li>La satisfacción de su personal</li>
+                                        <li>Mejorar la productividad y calidad de servicio en sus productos y/o servicios.</li>
+                                    </ul>
+                                </p>
+                        </div>
+                        
+                    </div>
                     
                 </div>
                 <div class="col-2">
@@ -332,9 +411,11 @@
         </div>
 
         <div class="btn-fixed">
-            <div class="whatsapp-container">
-                <img src="/Images/Iconos/medex/WhatsApp.svg" alt="" class="ico-whatsapp">
-            </div>
+            <a href="https://api.whatsapp.com/send?phone=51994025131&text=Deseo%20mayor%20informaci%C3%B3n%20de%20Salud%20Ocupacional" target=”_blank”>
+                <div class="whatsapp-container">
+                    <img src="/Images/Iconos/medex/WhatsApp.svg" alt="" class="ico-whatsapp">
+                </div>
+            </a>
             <div class="button" id="open-modal">
                 Solicitar cotización
             </div>
@@ -343,37 +424,7 @@
 
 
 
-        <!-- <div class="container-form modal" id="modal">
-            <label for="show" class="close-btn fas fa-times"></label>
-            <div class="text">Formulario</div>
-            <form action="#">
-                <div class="data">
-                    <label for="">Empresa o Nombre</label>
-                    <input type="text" value="" required>
-                </div>
-                <div class="data">
-                    <label for="">RUC o DNI</label>
-                    <input type="text" value="" required>
-                </div>
-                <div class="data">
-                    <label for="">Actividad de la empresa</label>
-                    <input type="text" value="" >
-                </div>
-                <div class="data">
-                    <label for="">Persona de contacto</label>
-                    <input type="text" value="" required>
-                </div>
-                <div class="data">
-                    <label for="">Telefono o WhatsApp</label>
-                    <input type="text" value="" required>
-                </div>
-                <div class="data">
-                    <label for="">Correo</label>
-                    <input type="text" value="" required>
-                </div>
-                <button type="submit">Enviar datos</button>
-            </form> -->
-
+        
             <!-- Empresa o nombre
             RUC o DNI
             Actividad de la empresa 
